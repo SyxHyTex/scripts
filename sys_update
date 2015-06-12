@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Skeleton draft for system update/upgrade
+
+apt-get update
+
+apt-get upgrade
