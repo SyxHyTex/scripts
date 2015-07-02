@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Skeleton draft for system update/upgrade
+echo "System is updating..."
+apt-get update
+if [$? -ne 0]; then
+	echo "SYSTEM UPDATE FAILED. ABORTING..."
+fi
+
+
+#TODO: Add prompt tree handling for both commands.
+apt-get upgrade
+if [$? -ne 0]; then
+	echo "SYSTEM UPDATE FAILED. ABORTING..."
+fi
